@@ -1,0 +1,21 @@
+<%- include("header.ejs") %>
+<h1>Quick Post</h1>
+
+<div class="modal-content rounded-4 shadow">
+  <div class="modal-body p-5 pt-0">
+    <form action="/create" method="post">
+      <label for="title"><h3>Title:</h3></label>
+      <div class="form-floating mb-3">
+        <input type="text" name="title" class="form-control rounded-3" />
+      </div>
+      <label for="content"><h3>Content:</h3></label>
+      <div class="form-floating mb-3">
+        <textarea name="content" id="" rows="10"></textarea>
+      </div>
+      <button class="w-30 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">
+        Create Post
+      </button>
+    </form>
+  </div>
+</div>
+<%- include("footer.ejs") %>
